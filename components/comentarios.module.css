@@ -1,0 +1,147 @@
+.comentariosSection {
+   
+  background-image: url('/curva5.png');
+  background-size: cover;      /* para que la imagen se ajuste al contenedor */
+  background-position: center;    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .imagen {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 15000px;
+    height: 300px;
+
+  }
+  
+  .titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin-bottom: 4rem;
+  }
+  
+  .listaComentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .comentario {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  
+  .comentario strong {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .comentario p {
+    margin: 0.2rem 0;
+    color: #000000;
+  }
+  
+  .nombre {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #030303;
+    margin-top: 0.2rem;
+  }
+  
+  .comentario {
+    font-size: 0.98rem;
+    color: #888;
+    margin-bottom: 1rem;
+  }
+  .comentario img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 800px;
+    align-items: center;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .textarea {
+    width: 100%;
+    padding: 1rem;
+    height: 150px;
+    border-radius: 30px;
+    background-color: #f6f6f6;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+  }
+  
+  .boton {
+    background-color: #005D8F;
+    color: white;
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-bottom: 3rem;
+  }
+  
+  .boton:hover {
+    background-color: rgb(13, 59, 115);
+  }
+
+  .fondoParallax {
+    background: 
+    linear-gradient(rgba(0, 32, 113, 0.4), rgba(2, 42, 145, 0.4)),
+    url('/testi.png'); /* Cambia por tu imagen */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px; /* o lo que necesites */
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  
+  .textoParallax {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  
+  .textoParallax {
+    position: relative;
+    z-index: 2;
+  }
+  
+  

@@ -1,0 +1,133 @@
+.container {
+  padding: rem;
+}
+
+.introContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* para que en móvil se apile */
+
+}
+
+.encabe {
+  flex: 1;
+  min-width: 300px;
+  align-content: center;
+}
+
+.titulo {
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-left: 4rem;
+  color: #222;
+  text-align: center;
+}
+
+.descripcion {
+  font-size: 1.6rem;
+  color: #555;
+  max-width: 600px;
+  margin-left: 7rem;
+  text-align: center;
+}
+
+.imagenWrapper {
+  flex-shrink: 0;
+}
+
+.imagentesti {
+  width: 550px;
+  height: auto;
+  margin-right: 150px;
+  object-fit: cover;
+}
+
+
+.testimonios {
+  background-color: rgba(218, 218, 218, 1);
+  padding: 2rem;
+  border-radius: 4rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .cardsContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: auto;
+}
+
+.texto {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.perfil {
+  margin-top: 1rem;
+}
+
+.imagen {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 0.5rem;
+}
+
+.nombre {
+  font-weight: bold;
+}
+
+.descripcionPerfil {
+  font-size: 0.875rem;
+  color: #777;
+}
+
+.card {
+  position: relative;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card::before {
+  content: "“"; /* comilla izquierda grande */
+  position: absolute;
+  top: -5rem;
+  left: -1rem;
+  font-size: 15rem;
+  color: #005D8F;
+  box-shadow: #222;
+  font-family: serif;
+  line-height: 1;
+}

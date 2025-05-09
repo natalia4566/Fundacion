@@ -1,0 +1,160 @@
+/* Prevención de scroll horizontal desde el contenedor principal */
+.somos-main {
+  font-family: sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+/* ENCABEZADO AZUL */
+.seccion-azul {
+  background-color: #005D8F;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.titulo-somos {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.descripcion-somos {
+  max-width: 960px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* BLOQUES DE MISIÓN Y VISIÓN */
+.bloque-mision,
+.bloque-vision {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* ✅ Fuerza igual altura entre imagen y texto */
+  justify-content: center;
+  
+  gap: 2rem;
+  margin: 3rem auto;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  max-width: 1300px;
+  width: 100%;
+  min-height: 400px; /* ✅ Altura base para que imagen pueda medir algo */
+}
+
+/* Invierte orden para visión */
+.bloque-vision {
+  flex-direction: row-reverse;
+}
+.item.invertido {
+  flex-direction: row-reverse;
+}
+
+.bloque-vision img {
+  border-radius: 123px 0 0 336px;
+}
+
+
+/* IMÁGENES */
+.imagen-mision,
+.imagen-vision {
+  width: 480px;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 30px 123px 336px 30px;
+}
+
+.bloque {
+  position: relative;
+  background-image: url('/curva5.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  /* o 'center center', 'bottom center' */
+  background-size: cover;
+  /* o 'contain', según necesites */
+  padding: 5rem 2rem;
+}
+
+
+
+/* TEXTO */
+.texto-mision,
+.texto-vision {
+  flex: 1 1 400px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.texto-mision h2,
+.texto-vision h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.texto-mision p,
+.texto-vision p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: center;
+}
+
+/* ANIMACIÓN HOVER EN BLOQUES */
+.bloque-mision:hover,
+.bloque-vision:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Asegura transición suave por defecto */
+.bloque-mision,
+.bloque-vision {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* RESPONSIVE EXTRA */
+@media (max-width: 768px) {
+  .imagen-mision,
+  .imagen-vision {
+    max-width: 100%;
+    border-radius: 40px;
+    height: auto; /* ✅ Para que no deforme en pantallas chicas */
+  }
+
+  .bloque-mision,
+  .bloque-vision {
+    padding: 1rem;
+    gap: 1rem;
+    margin: 2rem 1rem;
+    flex-direction: column; /* ✅ Mejora en móvil */
+    align-items: center;
+  }
+
+  .titulo-somos {
+    font-size: 1.4rem;
+  }
+
+  .texto-mision h2,
+  .texto-vision h2 {
+    font-size: 1.3rem;
+  }
+
+  .texto-mision p,
+  .texto-vision p {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,74 @@
+.container {
+    padding: 2rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    
+  }
+
+.grande{
+    background-image: url('/curva7.png');
+    background-size: cover;      /* para que la imagen se ajuste al contenedor */
+    background-position: center;
+}
+  .heading {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center; /* Centra el título */
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding-left: 0; /* Elimina cualquier padding adicional */
+  }
+  
+  .listItem {
+    border: 1px solid #e5e7eb;
+    background-color: #f5f6f8;
+    border-radius: 1rem; /* Bordes redondeados */
+    padding: 2.5rem;
+    transition: box-shadow 0.3s ease;
+    text-align: center; /* Centra el texto dentro del contenedor de la noticia */
+  }
+  
+  .listItem:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #005D8F;
+    text-decoration: none; /* Sin subrayado */
+    margin-bottom: 0.5rem;
+  }
+  
+  .title:hover {
+    color: #04537d; /* Color más oscuro al pasar el mouse */
+  }
+  
+  .date {
+    font-size: 1rem;
+    color: #6b7280;
+  }
+  
+  .enlace {
+    padding-top: 10px;
+    font-size: 1rem;
+    color: #4a4a4a; /* Gray color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .enlace:hover {
+    color: #005D8F; /* Azul */
+  }
+  
+  .enlace:focus {
+    color: #005D8F; /* Azul */
+    outline: none; /* Elimina el borde de enfoque */
+  }
+  
