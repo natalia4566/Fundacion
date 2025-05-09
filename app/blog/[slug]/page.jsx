@@ -57,12 +57,25 @@ export default function NoticiaPage({ params }) {
 
           {noticia.videoUrl && (
             <div className={styles.videoWrapper}>
-              <video controls width="100%">
-                <source src={noticia.videoUrl} type="video/mp4" />
-                Tu navegador no soporta el video.
-              </video>
+              {noticia.videoUrl.includes('youtube') ? (
+                <iframe
+                  width="100%"
+                  height="400"
+                  src={noticia.videoUrl}
+                  title={noticia.titulo}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              ) : (
+                <video controls width="100%">
+                  <source src={noticia.videoUrl} type="video/mp4" />
+                  Tu navegador no soporta el video.
+                </video>
+              )}
             </div>
           )}
+
         </div>
       </div>
     </div>

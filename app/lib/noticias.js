@@ -24,7 +24,7 @@ export const noticias = [
       { tipo: 'texto', valor: "Está comprobado que la estimulación cognitiva regular puede ralentizar el avance de enfermedades neurodegenerativas, aumentar la autonomía y favorecer el bienestar emocional. Por eso, cada actividad que realizamos va más allá de una tarea: es una herramienta terapéutica que llevamos a cabo con amor, paciencia y dedicación." },
       { tipo: 'texto', valor: "En la Fundación creemos profundamente en el poder de las pequeñas acciones cotidianas. Por eso, cada espacio que brindamos para ejercitar la mente es también una oportunidad para cuidar el alma." }
     ],
-    videoUrl: '/videos/actividades.mp4'
+    videoUrl: 'https://www.youtube.com/embed/8L1G5vJUifw?si=QWa1emKV4O2Mx7LF'
   },
   {
     titulo: 'Actividades Ocupacionales',
@@ -56,7 +56,8 @@ export const noticias = [
       }
     ],
     
-     videoUrl: '/videos/ocu.mp4'
+     videoUrl: 'https://www.youtube.com/embed/nBgBD6yeQNM?si=iINW2VcYkwkYNM-Q'
+
   },
 
   {
@@ -72,6 +73,6 @@ export const noticias = [
       { tipo: 'texto', valor: "🌸 Gracias a todas las madres por su entrega y dedicación." },
       { tipo: 'texto', valor: "Eventos como este nos recuerdan la importancia de valorar a quienes día a día nos enseñan con su ejemplo de fortaleza, ternura y compromiso." }
     ],
-    videoUrl: '/videos/diamadres.mp4'
+    videoUrl: 'https://www.youtube.com/embed/q3rIWO7Txn4?si=JRVA9db7iC7SAniE'
   }
 ];
