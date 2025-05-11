@@ -9,7 +9,7 @@ const Comentarios = () => {
     const [comentario, setComentario] = useState('');
 
     useEffect(() => {
-        fetch(`${process.env.NEXT_PUBLIC_API_URL}/comentarios`)
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/comentarios`)
             .then(res => res.json())
             .then(data => setComentarios(data));
     }, []);
@@ -18,7 +18,7 @@ const Comentarios = () => {
         e.preventDefault();
         const nuevoComentario = { nombre, comentario };
 
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/comentarios`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/comentarios`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(nuevoComentario),
