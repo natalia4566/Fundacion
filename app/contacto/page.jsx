@@ -24,7 +24,7 @@ export default function contacto() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch('http://localhost:3001/api/contacto', {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contacto`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form),
@@ -75,7 +75,6 @@ export default function contacto() {
         </form>
 
       </div>
-
 
       {/* Mapa abajo del formulario */}
       <div className={styles.mapaContainer}>

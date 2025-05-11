@@ -9,7 +9,7 @@ const Comentarios = () => {
     const [comentario, setComentario] = useState('');
 
     useEffect(() => {
-        fetch('http://localhost:3001/api/comentarios')
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/comentarios`)
             .then(res => res.json())
             .then(data => setComentarios(data));
     }, []);
@@ -18,7 +18,7 @@ const Comentarios = () => {
         e.preventDefault();
         const nuevoComentario = { nombre, comentario };
 
-        const res = await fetch('http://localhost:3001/api/comentarios', {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/comentarios`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(nuevoComentario),
@@ -66,8 +66,6 @@ const Comentarios = () => {
                 ></textarea>
                 <button className={styles.boton} type="submit">Enviar</button>
             </form>
-
-
         </section>
     );
 };
