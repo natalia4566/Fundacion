@@ -14,7 +14,8 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Header />
-        <a
+        <div>
+          <a
           href="https://checkout.wompi.co/l/test_o33xsZ"
           target="_blank"
           rel="noopener noreferrer"
@@ -24,6 +25,8 @@ export default function RootLayout({ children }) {
           
         </a>
        <div className="texto-donar">DONA AQUÍ</div>
+        </div>
+        
         <main>{children}</main>
 
         <Footer />
