@@ -131,7 +131,6 @@
   .imagen-mision,
   .imagen-vision {
     max-width: 100%;
-    border-radius: 40px;
     height: auto; /* ✅ Para que no deforme en pantallas chicas */
   }
 
