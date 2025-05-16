@@ -24,7 +24,7 @@ export default function contacto() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contacto`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contacto`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form),
