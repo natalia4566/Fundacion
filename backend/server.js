@@ -95,7 +95,6 @@ app.post('/api/contacto', async (req, res) => {
     res.status(500).json({ message: 'Error al enviar el correo' });
   }
 });
-S
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
