@@ -66,19 +66,17 @@ app.post('/api/contacto', async (req, res) => {
   }
 
   const transporter = nodemailer.createTransport({
-    host: 'smtp.office365.com',
-    port: 587,
-    secure: false,
+    service: 'gmail',
     auth: {
-      user: 'amparoyfortaleza@hotmail.com',
-      pass: 'Cartagena2014',
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
     },
   });
 
   try {
     await transporter.sendMail({
-      from: process.env.OUTLOOK_USER,
-      to: process.env.OUTLOOK_USER,  // puedes cambiarlo si quieres recibirlo en otro correo
+      from: process.env.GMAIL_USER,
+      to: process.env.GMAIL_USER, // O cambia esto si quieres recibirlo en otro correo
       subject: `Nuevo mensaje de ${nombre}`,
       html: `
         <div style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">
@@ -97,6 +95,7 @@ app.post('/api/contacto', async (req, res) => {
     res.status(500).json({ message: 'Error al enviar el correo' });
   }
 });
+S
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
