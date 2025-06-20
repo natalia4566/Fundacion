@@ -38,9 +38,9 @@ const Legal = () => {
     { nombre: 'Estados Financieros 2022.', url: '/Documentos/2022/Estados-Financieros-2022.pdf' }
   ],
   2023: [
-    { nombre: 'Denominacion de domicilio.', url: '/Documentos/2023/1.-Denominacion-Identificacion-Domicilio-pdf.pdf' },
-    { nombre: 'Descripcion actividad meritoria.', url: '/Documentos/2023/2.-DescripcionActividad-Meitoria-pdf.pdf' },
-    { nombre: 'Certificado requisitos RL.', url: '/Documentos/2023/3.-Certificado-Requisitos-RL-pdf.pdf' },
+    { nombre: 'Denominacion de domicilio.', url: '/Documentos/2023/1.-Denomincacion-Identificacion-Domicilio-pdf.pdf' },
+    { nombre: 'Descripcion actividad meritoria.', url: '/Documentos/2023/2.-DescripcionlActividad-Meitoria-pdf.pdf' },
+    { nombre: 'Certificado requisitos RL.', url: '/Documentos/2023/3.-Certfificado-Requisitos-R.L-pdf.pdf' },
     { nombre: 'Certificación antecedentes judiciales RL.', url: '/Documentos/2023/4-Certificado-Antecedentes-RL.pdf' },
     { nombre: 'Nombre de los cargos directivos y de control.', url: '/Documentos/2023/5.-Cargos-Directivos-y-de-Control-pdf.pdf' },
     { nombre: 'Acta de asamblea.', url: '/Documentos/2023/6.-Acta-Asamblea-General-pdf.pdf' },

@@ -5,22 +5,23 @@ import Comentarios from "../../components/comentarios";
 const Testimonios = () => {
   const testimonios = [
     {
-      nombre: "Mario Rodríguez",
+      nombre: "Abigail Marina Gamez",
+      descripcion: "Hija de residente",
+      texto: "Como acudiente responsable de mi mamá Graciela Perdomo de Gamez (Chelita) quien reside en el hogar Tu Amparo y Tu Fortaleza desde los primeros días de su fundación, quiero manifestar mi agradecimiento de manera muy especial a sus directivos y a todo el personal de apoyo por el trato digno y el manejo profesional que han tenido para con ella durante los años que ha estado con ustedes pues siendo una paciente de 103 años ha sobrevivido muy bien gracias a sus cuidados a su paciencia y sobretodo al amor que le profesan, Dios los siga bendiciendo por siempre.",
+      imagen: "abigail.png"
+    },
+    {
+      nombre: "Gerardo Antonio Ospina",
       descripcion: "Hijo de residente",
       texto: "El tiempo que estuvo mi madre en el hogar , fue muy importante para ella y nosotros como familia, el estado de animo de ella cambió muchísimo , la compañía y el cariño con la que la trataban hicieron de ella otra persona",
       imagen: "testimonio1.png"
     },
+    
     {
-      nombre: "Juan Pérez",
-      descripcion: "Residente",
-      texto: "Aquí me siento en familia. Siempre hay algo que hacer, desde actividades recreativas hasta momentos de oración. El trato es excelente y me siento acompañado y cuidado todos los días.",
-      imagen: "juan.png"
-    },
-    {
-      nombre: "Luisa Fernández",
-      descripcion: "Hija de residente",
-      texto: "Mi abuela recibe el cariño y la atención que merece. Nos tranquiliza saber que está en un lugar donde se preocupan por su bienestar físico y emocional. Es un hogar de verdad, no solo un lugar de cuidado.",
-      imagen: "luisa.png"
+      nombre: "Tomas Polo",
+      descripcion: "Hijo de residente",
+      texto: "Deseo expresarles mi más profundo agradecimiento por la hermosa labor que realizan día a día. Su amabilidad, gentileza, respeto y amor por lo que hacen se reflejan en cada gesto, en cada palabra y en cada cuidado que le brindan a mi madre. Gracias por su entrega, por cuidar de ella con tanto esmero, por su dedicación en su alimentación, en su bienestar y en cada detalle que contribuye a su salud y felicidad. Sus cuidados han sido fundamentales para que mi madre siga adelante, y eso no tiene precio. Gracias por ser luz en momentos de incertidumbre. Por ser más que profesionales, por ser humanos de gran corazón. Que Dios les bendiga siempre.",
+      imagen: "tomas.png"
     }
   ];
 
