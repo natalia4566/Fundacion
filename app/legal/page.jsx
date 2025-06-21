@@ -56,7 +56,7 @@ const Legal = () => {
   { nombre: 'Certificado Antecedentes R.L.', url: '/Documentos/2024/4. Certificado Antecedentes R.L..pdf' },
   { nombre: 'Cargos Directivos y de Control', url: '/Documentos/2024/5. Cargos Directivos y de Control.pdf' },
   { nombre: 'Acta Asamblea  2025 EF ', url: '/Documentos/2024/6. Acta Asamblea  2025 EF 2024.pdf' },
-  { nombre: 'Informe Anual Gestion ', url: '/Documentos/2024/7. Informe Anual Gestion 2024.pdf' },
+  { nombre: 'Informe Anual Gestion ', url: '/Documentos/2024/7. Infomre Anual Gestion 2024.pdf' },
   { nombre: 'Identificacion Fundadores', url: '/Documentos/2024/8. Identificacion Fundadores.pdf' },
   { nombre: 'Monto total Donaciones ', url: '/Documentos/2024/9. Monto total Donaciones 2024.pdf' },
   { nombre: 'Estado de resultados 2024', url: '/Documentos/2024/ESTADO DE RESULTADOS 2024.pdf' }
