@@ -59,7 +59,9 @@ const Legal = () => {
   { nombre: 'Informe Anual Gestion ', url: '/Documentos/2024/7. Infomre Anual Gestion 2024.pdf' },
   { nombre: 'Identificacion Fundadores', url: '/Documentos/2024/8. Identificacion Fundadores.pdf' },
   { nombre: 'Monto total Donaciones ', url: '/Documentos/2024/9. Monto total Donaciones 2024.pdf' },
-  { nombre: 'Estado de resultados 2024', url: '/Documentos/2024/ESTADO DE RESULTADOS 2024.pdf' }
+  { nombre: 'Monto total de pagos Salariales.', url: '/Documentos/2024/10. Monto total Pagos Salariales.pdf' },
+  { nombre: 'Estado de resultados 2024', url: '/Documentos/2024/ESTADO DE RESULTADOS 2024.pdf' },
+  { nombre: 'Formato 5245.', url: '/Documentos/2024/Formato 5245.pdf' }
 ]
 
 };

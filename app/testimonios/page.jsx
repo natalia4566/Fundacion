@@ -34,7 +34,7 @@ const Testimonios = () => {
             <p className={styles.descripcion}>
               Las experiencias de quienes forman parte de nuestro hogar son el reflejo del cariño y compromiso con el que cuidamos a cada adulto mayor. Aquí compartimos testimonios y comentarios de familiares y residentes, quienes nos inspiran a seguir brindando bienestar, compañía y calidad de vida.
             </p>
-          </div>
+          </div> 
 
           <div className={styles.imagenWrapper}>
             <img className={styles.imagentesti} src="testi1.png" alt="viejita" />

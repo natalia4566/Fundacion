@@ -36,7 +36,7 @@ const Comentarios = () => {
                 <h2 className={styles.textoParallax}></h2>
             </section>
 
-            <h2 className={styles.titulo}>Dejanos tu comentario</h2>
+            <h2 className={styles.titulo}>Déjanos tú comentario</h2>
 
             <div className={styles.listaComentarios}>
                 {comentarios.map((c, idx) => (
