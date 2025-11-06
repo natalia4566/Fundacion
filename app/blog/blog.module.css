@@ -1,74 +1,97 @@
 .container {
-    padding: 2rem;
-    max-width: 60rem;
-    margin: 0 auto;
-    
-  }
-
-.grande{
-    background-image: url('/curva7.png');
-    background-size: cover;      /* para que la imagen se ajuste al contenedor */
-    background-position: center;
+  padding: 3rem 1.5rem;
+  max-width: 64rem;
+  margin: 0 auto;
 }
-  .heading {
-    font-size: 2.25rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    text-align: center; /* Centra el título */
-  }
-  
-  .list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    list-style-type: none; /* Elimina los puntos de la lista */
-    padding-left: 0; /* Elimina cualquier padding adicional */
-  }
-  
-  .listItem {
-    border: 1px solid #e5e7eb;
-    background-color: #f5f6f8;
-    border-radius: 1rem; /* Bordes redondeados */
-    padding: 2.5rem;
-    transition: box-shadow 0.3s ease;
-    text-align: center; /* Centra el texto dentro del contenedor de la noticia */
-  }
-  
-  .listItem:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #005D8F;
-    text-decoration: none; /* Sin subrayado */
-    margin-bottom: 0.5rem;
-  }
-  
-  .title:hover {
-    color: #04537d; /* Color más oscuro al pasar el mouse */
-  }
-  
-  .date {
-    font-size: 1rem;
-    color: #6b7280;
-  }
-  
-  .enlace {
-    padding-top: 10px;
-    font-size: 1rem;
-    color: #4a4a4a; /* Gray color */
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .enlace:hover {
-    color: #005D8F; /* Azul */
-  }
-  
-  .enlace:focus {
-    color: #005D8F; /* Azul */
-    outline: none; /* Elimina el borde de enfoque */
-  }
-  
+
+.grande {
+  background-image: url('/curva7.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Título principal */
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #0d1b2a;
+  letter-spacing: -0.5px;
+}
+
+/* Lista de eventos o noticias */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cada tarjeta individual */
+.listItem {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.listItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Título de cada item */
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0077b6;
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.title:hover {
+  color: #023e8a;
+}
+
+/* Fecha del evento */
+.date {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+/* Enlace de leer más u otros */
+.enlace {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.enlace:hover,
+.enlace:focus {
+  color: #0077b6;
+  outline: none;
+}
+
+/* Animación suave al cargar */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.listItem {
+  animation: fadeIn 0.6s ease both;
+}

@@ -74,5 +74,22 @@ export const noticias = [
       { tipo: 'texto', valor: "Eventos como este nos recuerdan la importancia de valorar a quienes día a día nos enseñan con su ejemplo de fortaleza, ternura y compromiso." }
     ],
     videoUrl: 'https://www.youtube.com/embed/q3rIWO7Txn4?si=JRVA9db7iC7SAniE'
-  }
+  },
+
+  {
+  titulo: 'Celebración de Amor y Amistad con la Orquesta de la Policía Nacional',
+  slug: 'celebracion-amor-y-amistad-policia-nacional',
+  fecha: '12 de septiembre de 2024',
+  imagen: '/amoryamistad2.jpg',
+  contenido: [
+    { tipo: 'texto', valor: "El pasado 12 de septiembre celebramos el Día del Amor y la Amistad con una jornada inolvidable en compañía de la Orquesta de la Policía Nacional. Un evento lleno de música, alegría y unión que fortaleció los lazos de compañerismo y cariño entre todos los asistentes." },
+    { tipo: 'imagen', valor: '/amoryamistad.jpg', alt: 'Orquesta de la Policía Nacional en presentación' },
+    { tipo: 'texto', valor: "Durante la celebración, disfrutamos de un concierto en vivo interpretado por la talentosa orquesta, que llenó el ambiente de energía positiva y emociones. También se realizaron dinámicas, rifas y actividades especiales que hicieron sonreír a cada participante." },
+    { tipo: 'texto', valor: "Este espacio fue una oportunidad para compartir, agradecer y reforzar los valores de amistad, respeto y solidaridad que nos unen como comunidad." },
+    { tipo: 'texto', valor: "💛 Gracias a la Policía Nacional por su acompañamiento y a todos los que hicieron parte de esta hermosa celebración. Momentos como estos nos recuerdan la importancia de disfrutar y valorar a las personas que tenemos cerca." },
+    { tipo: 'texto', valor: "¡Que el amor y la amistad sigan siendo el motor que nos impulsa a construir un entorno lleno de armonía y bienestar!" }
+  ],
+  videoUrl: 'https://www.youtube.com/embed/TFyMfV770yU?si=byeTTDU7NSiansmW'
+}
+
 ];

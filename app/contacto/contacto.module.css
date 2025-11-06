@@ -7,8 +7,26 @@
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+
+  /* ✨ Animación */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
 }
 
+/* Animación definida */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(1px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
 .contenidoContacto {
   display: flex;
   justify-content: space-between;

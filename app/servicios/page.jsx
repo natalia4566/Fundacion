@@ -57,7 +57,7 @@ export default function Servicios() {
         <div className={styles.tarjetaServicio}>
         <img src="ocupacional.png" alt="icono" className={styles.iconotarjeta} />
           <h3>Terapia ocupacional</h3>
-          <p>Dirigida a todos aquellos adultos mayores que debido a algún accidente o patología que haya limitado su autonomía a cualquier nivel de la actividad de la vida diaria (AVD) el principal fin que se busca es el auto mantenimiento y la participación familiar y social, Realizada por un Profesional en el área 2 veces a la semana, instaurando plan de trabajo para ser desarrollados diariamente.</p>
+          <p>Dirigida a todos aquellos adultos mayores que debido a algún accidente o patología que haya limitado su autonomía a cualquier nivel de la actividad de la vida diaria (AVD) el principal fin que se busca es el auto mantenimiento y la participación familiar y social, Realizada por un Profesional en el área  todos los días de la semana.</p>
         </div>
       </section>
       </div>

@@ -1,12 +1,18 @@
-import '../styles/globals.css';
-import Header from '../components/header';
-import Footer from '../components/footer';
-export const metadata = {
-  title: 'Tu Amparo y Tu Fortaleza',
-  description: 'Cuidado integral para adultos mayores',
-};
+"use client";
+import "../styles/globals.css";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
+  const [pageKey, setPageKey] = useState(pathname);
+
+  useEffect(() => {
+    setPageKey(pathname);
+  }, [pathname]);
+
   return (
     <html lang="es">
       <head>
@@ -14,24 +20,26 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Header />
+        {/* tu botón flotante */}
         <div>
           <a
-          href="https://checkout.wompi.co/l/test_o33xsZ"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="boton-flotante"
-        >
-          <img src="donar.png" alt="Donar" />
-          
-        </a>
-       <div className="texto-donar">DONA AQUÍ</div>
+            href="https://checkout.wompi.co/l/test_o33xsZ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="boton-flotante"
+          >
+            <img src="donar.png" alt="Donar" />
+          </a>
+          <div className="texto-donar">DONA AQUÍ</div>
         </div>
-        
-        <main>{children}</main>
+
+        {/* main se remonta cada vez que cambia pathname -> aplica .page-transition */}
+        <main key={pageKey} className="page-transition">
+          {children}
+        </main>
 
         <Footer />
       </body>
     </html>
   );
 }
-
