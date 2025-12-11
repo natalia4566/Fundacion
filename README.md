@@ -93,10 +93,10 @@ npm start
 🔐 Environment Variables
 Create a .env file in the backend root with:
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
-WOMPI_PUBLIC_KEY=your_wompi_public_key
-WOMPI_PRIVATE_KEY=your_wompi_private_key
-Replace placeholder values with real credentials. Do NOT commit secrets.
+MONGO_URI=mongodb_connection_string
+WOMPI_PUBLIC_KEY=wompi_public_key
+WOMPI_PRIVATE_KEY=wompi_private_key
+
 
 📡 API Endpoints
 Here are some example endpoints for local usage:
@@ -105,4 +105,4 @@ Method	Route	Description
 GET	/api/about	Get about section
 POST	/api/contact	Submit contact form
 GET	/api/blogs	Fetch blog posts
-POST	/api/blogs	Create a new blog (admin)
+POST	/api/blogs	Create a new blog 
