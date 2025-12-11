@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fundación Hogar Geriátrico Tu Amparo y Tu Fortaleza
 
-## Getting Started
+> Full-stack institutional website built with React, Node.js, Express and MongoDB.
 
-First, run the development server:
+This project is a complete web platform developed for the “Fundación Hogar Geriátrico Tu Amparo y Tu Fortaleza”, an organization dedicated to improving the quality of life of elderly individuals. The platform includes key features to present the foundation’s mission, activities, donation support, blog news, testimonials, and contact forms.
+
+The website is deployed and actively used, with responsive layouts and a secure backend that handles dynamic content and payment integration.
+
+🔗 Live site: https://www.hogaramparofortaleza.org/  
+📍 GitHub: https://github.com/natalia4566/Fundacion  
+
+---
+
+## 📌 Table of Contents
+
+1. [Features](#features)  
+2. [Tech Stack](#tech-stack)  
+3. [Project Structure](#project-structure)  
+4. [Getting Started](#getting-started)  
+5. [Environment Variables](#environment-variables)  
+6. [API Endpoints](#api-endpoints)  
+7. [Deployment](#deployment)  
+8. [License](#license)
+
+---
+
+## 🚀 Features
+
+- Responsive and professional UI built with **React** and **CSS Modules**  
+- Dynamic routing and navigation between pages  
+- Backend APIs built in **Node.js** with **Express**  
+- Database management with **MongoDB**  
+- Authentication and protected admin routes  
+- Donation integration using **Wompi API**  
+- Blog section for posting news and updates  
+- Contact form and user interaction sections  
+- Deployed using **Vercel**
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Frontend | React, CSS Modules |
+| Backend | Node.js, Express |
+| Database | MongoDB |
+| Deployment | Vercel |
+| API Integration | Wompi API |
+| Tools | Git, Postman, Figma |
+
+---
+
+## 📁 Project Structure
+
+Fundacion/
+├── app/ # Frontend React code
+├── backend/ # Backend Node.js & Express API
+├── components/ # Reusable UI components
+├── public/ # Static assets
+├── styles/ # Global and module styles
+├── package.json
+├── README.md
+
+yaml
+Copiar código
+
+> The project is split between frontend and backend logic, with the React app consuming API endpoints provided by the Express server.
+
+---
+
+## 🧩 Getting Started
+
+### Requirements
+
+Make sure you have installed:
+
+- Node.js (>= 18.x)  
+- npm or yarn  
+- MongoDB (local or cloud instance)
+
+### Installation
+
+1. Clone the repo:
 
 ```bash
+git clone https://github.com/natalia4566/Fundacion.git
+Install dependencies:
+
+bash
+Copiar código
+npm install
+Start server:
+
+bash
+Copiar código
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Start the frontend:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+bash
+Copiar código
+npm start
+🔐 Environment Variables
+Create a .env file in the backend root with:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+env
+Copiar código
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+WOMPI_PUBLIC_KEY=your_wompi_public_key
+WOMPI_PRIVATE_KEY=your_wompi_private_key
+Replace placeholder values with real credentials. Do NOT commit secrets.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📡 API Endpoints
+Here are some example endpoints for local usage:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Method	Route	Description
+GET	/api/about	Get about section
+POST	/api/contact	Submit contact form
+GET	/api/blogs	Fetch blog posts
+POST	/api/blogs	Create a new blog (admin)
