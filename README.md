@@ -13,16 +13,13 @@ The website is deployed and actively used, with responsive layouts and a secure 
 
 ## 📌 Table of Contents
 
-1. [Features](#features)  
-2. [Tech Stack](#tech-stack)  
-3. [Project Structure](#project-structure)  
-4. [Getting Started](#getting-started)  
-5. [Environment Variables](#environment-variables)  
-6. [API Endpoints](#api-endpoints)  
-7. [Deployment](#deployment)  
-8. [License](#license)
+1. Features  
+2. Tech Stack
+3. Project Structure
+4. Getting Started
+5. Environment Variables 
+6. API Endpoints
 
----
 
 ## 🚀 Features
 
