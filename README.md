@@ -59,8 +59,7 @@ Fundacion/
 ├── package.json
 ├── README.md
 
-yaml
-Copiar código
+
 
 > The project is split between frontend and backend logic, with the React app consuming API endpoints provided by the Express server.
 
@@ -83,25 +82,16 @@ Make sure you have installed:
 ```bash
 git clone https://github.com/natalia4566/Fundacion.git
 Install dependencies:
-
-bash
-Copiar código
 npm install
+
 Start server:
-
-bash
-Copiar código
 npm run dev
-Start the frontend:
 
-bash
-Copiar código
+Start the frontend:
 npm start
+
 🔐 Environment Variables
 Create a .env file in the backend root with:
-
-env
-Copiar código
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 WOMPI_PUBLIC_KEY=your_wompi_public_key
