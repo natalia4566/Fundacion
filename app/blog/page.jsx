@@ -3,8 +3,30 @@ import Link from 'next/link';
 import { getAllNoticias } from '../lib/getNoticias';
 import styles from './blog.module.css';
 
+const meses = {
+  enero: 0,
+  febrero: 1,
+  marzo: 2,
+  abril: 3,
+  mayo: 4,
+  junio: 5,
+  julio: 6,
+  agosto: 7,
+  septiembre: 8,
+  octubre: 9,
+  noviembre: 10,
+  diciembre: 11,
+};
+
+function parseFecha(fecha) {
+  const [dia, , mes, , anio] = fecha.toLowerCase().split(' ');
+  return new Date(Number(anio), meses[mes], Number(dia));
+}
+
 export default function BlogPage() {
-  const noticias = getAllNoticias();
+  const noticias = getAllNoticias().sort(
+    (a, b) => parseFecha(b.fecha) - parseFecha(a.fecha)
+  );
 
   return (
     <div className={styles.grande}>

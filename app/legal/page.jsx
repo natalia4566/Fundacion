@@ -62,7 +62,23 @@ const Legal = () => {
   { nombre: 'Monto total de pagos Salariales.', url: '/Documentos/2024/10. Monto total Pagos Salariales.pdf' },
   { nombre: 'Estado de resultados 2024', url: '/Documentos/2024/ESTADO DE RESULTADOS 2024.pdf' },
   { nombre: 'Formato 5245.', url: '/Documentos/2024/Formato 5245.pdf' }
+  
+  ],
+  2025: [
+  { nombre: 'Denominacion Identificacion Domicilio', url: '/Documentos/2025/1. Denominacion Identificacion Domicilio.pdf' },
+  { nombre: 'Descripcion Actividad Meritoria', url: '/Documentos/2025/2. Descripcion Actividad Meritoria (1).pdf' },
+  { nombre: 'Certificado Requisitos R.L.', url: '/Documentos/2025/3. Certificado Requisitos R.L..pdf' },
+  { nombre: 'Certificacion Antecedentes R.L.', url: '/Documentos/2025/4. Certificacion Antecedentes R.L..pdf' },
+  { nombre: 'Cargos Directivos y de Control', url: '/Documentos/2025/5. Cargos Directivos y de Control (1).pdf' },
+  { nombre: 'Acta Asamblea 2026 EF 2025', url: '/Documentos/2025/6. Acta Asamblea 2026 EF 2025.pdf' },
+  { nombre: 'Informe Anual Gestion 2025', url: '/Documentos/2025/7. Informe Anual Gestion 2025.pdf' },
+  { nombre: 'Identificacion Fundadores', url: '/Documentos/2025/8. Identificacion Fundadores.pdf' },
+  { nombre: 'Monto Total Donaciones 2025', url: '/Documentos/2025/9. Monto Total Donaciones 2025.pdf' },
+  { nombre: 'Monto Pagos Salariales a Directivos', url: '/Documentos/2025/10. Monto Pagos Salariales a Directivos.pdf' },
+  { nombre: 'Estado de Resultados 2025', url: '/Documentos/2025/ESTADO DE RESULTADOS 2025.pdf' },
+  { nombre: 'Formato 5245 RTE', url: '/Documentos/2025/FORMATO 5245 RTE.pdf' }
 ]
+
 
 };
 

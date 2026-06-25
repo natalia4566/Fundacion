@@ -63,7 +63,7 @@ export const noticias = [
   {
     titulo: 'Celebración del Día de la Madre con la Policía Nacional',
     slug: 'celebracion-dia-de-la-madre-policia-nacional',
-    fecha: '12 de mayo de 2024',
+    fecha: '12 de mayo de 2025',
     imagen: '/madres.jpg',
     contenido: [
       { tipo: 'texto', valor: "El pasado 12 de mayo, en conmemoración del Día de la Madre, vivimos una jornada muy especial en compañía de la Policía Nacional. Fue un espacio lleno de alegría, cariño y gratitud, dedicado a resaltar la labor incansable de todas las madres que hacen parte de nuestra comunidad." },
@@ -79,7 +79,7 @@ export const noticias = [
   {
   titulo: 'Celebración de Amor y Amistad con la Orquesta de la Policía Nacional',
   slug: 'celebracion-amor-y-amistad-policia-nacional',
-  fecha: '12 de septiembre de 2024',
+  fecha: '12 de septiembre de 2025',
   imagen: '/amoryamistad2.jpg',
   contenido: [
     { tipo: 'texto', valor: "El pasado 12 de septiembre celebramos el Día del Amor y la Amistad con una jornada inolvidable en compañía de la Orquesta de la Policía Nacional. Un evento lleno de música, alegría y unión que fortaleció los lazos de compañerismo y cariño entre todos los asistentes." },
@@ -90,6 +90,49 @@ export const noticias = [
     { tipo: 'texto', valor: "¡Que el amor y la amistad sigan siendo el motor que nos impulsa a construir un entorno lleno de armonía y bienestar!" }
   ],
   videoUrl: 'https://www.youtube.com/embed/TFyMfV770yU?si=byeTTDU7NSiansmW'
+}, 
+{
+  titulo: 'Celebración del Día del Padre',
+  slug: 'celebracion-dia-del-padre-2026',
+  fecha: '16 de junio de 2026',
+  imagen: '/Feliz día.png',
+  contenido: [
+    { 
+      tipo: 'texto', 
+      valor: "El pasado 16 de junio celebramos con gran alegría el Día del Padre, un espacio especial dedicado a honrar y agradecer a todos los padres que forman parte de nuestra comunidad. Una jornada llena de emociones, risas y momentos inolvidables." 
+    },
+    { 
+      tipo: 'imagen', 
+      valor: '/fotocomida.jpeg', 
+      alt: 'Celebración del Día del Padre' 
+    },
+    { 
+      tipo: 'texto', 
+      valor: "Durante la celebración se llevaron a cabo actividades recreativas, dinámicas especiales y un emotivo reconocimiento a cada padre presente, resaltando su papel fundamental en la familia y en la construcción de una sociedad más fuerte." 
+    },
+    { 
+      tipo: 'texto', 
+      valor: "Contamos con la participación entusiasta de toda la comunidad, quienes demostraron con su presencia el cariño y el respeto que sienten por estas figuras tan importantes en sus vidas." 
+    },
+    { 
+      tipo: 'texto', 
+      valor: "👨‍👧‍👦 Gracias a todos los padres por su entrega, fortaleza y amor incondicional. Su ejemplo día a día es la guía más poderosa para quienes los rodean." 
+    },
+    { 
+      tipo: 'texto', 
+      valor: "Momentos como este nos recuerdan la importancia de valorar y celebrar a quienes con esfuerzo y dedicación construyen un hogar lleno de amor y valores." 
+    },
+  ],
+  videoUrl: 'https://www.youtube.com/embed/f22R4KBVL0c',
+  videosAdicionales: [
+    {
+      url: 'https://www.youtube.com/embed/a9nQTVsKzmA',
+      titulo: 'Almuerzo especial'
+    },
+    {
+      url: 'https://www.youtube.com/embed/gCvDGYMzQX8',
+      titulo: 'Cantantes invitados'
+    }
+  ]
 }
-
 ];
