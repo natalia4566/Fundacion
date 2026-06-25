@@ -1,12 +1,4 @@
-:global(:root) {
-  --cafe: #6d4e2e;
-  --fondo-contenido: #eceaea;
-  --boton-bg: #d9d9d9;
-  --boton-hover: #c4c4c4;
-  --radio: 12px;
-  --sombra-suave: 0 2px 8px rgba(0, 0, 0, 0.08);
-  --transicion: 0.3s ease;
-}
+
 
 /* ── Contenedor ── */
 .contenedor {
@@ -35,7 +27,7 @@
 /* ── Encabezado ── */
 .encabezado {
   display: flex;
-  background-color: var(--cafe);
+  background-color: #6d4e2e;
   border-radius: 18px;
   overflow: hidden;
   margin-bottom: 30px;
@@ -104,25 +96,25 @@
 .boton {
   width: 100%;
   height: 60px;
-  background-color: var(--boton-bg);
+  background-color: #d9d9d9;
   color: #1a1a1a;
   font-weight: 600;
   padding: 12px 20px;
   font-size: 22px;
   border: none;
   cursor: pointer;
-  border-radius: var(--radio);
-  box-shadow: var(--sombra-suave);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition:
-    background-color var(--transicion),
-    box-shadow var(--transicion),
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
     transform 0.15s ease;
   text-align: center;
   letter-spacing: -0.2px;
 }
 
 .boton:hover {
-  background-color: var(--boton-hover);
+  background-color: #c4c4c4;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
 }
 
@@ -131,7 +123,7 @@
 }
 
 .boton:focus-visible {
-  outline: 3px solid var(--cafe);
+  outline: 3px solid #6d4e2e;
   outline-offset: 3px;
 }
 
@@ -142,8 +134,8 @@
   transition:
     grid-template-rows 0.4s cubic-bezier(0.22, 1, 0.36, 1),
     padding 0.3s ease;
-  background-color: var(--fondo-contenido);
-  border-radius: 0 0 var(--radio) var(--radio);
+  background-color: #eceaea;
+  border-radius: 0 0 12px 12px;
   padding: 0 15px;
   box-sizing: border-box;
 }
@@ -169,12 +161,12 @@
   font-size: 18px;
   display: block;
   margin: 6px 0;
-  transition: color var(--transicion), padding-left var(--transicion);
+  transition: color 0.3s ease, padding-left 0.3s ease;
   padding-left: 0;
 }
 
 .enlace:hover {
-  color: var(--cafe);
+  color: #6d4e2e;
   padding-left: 4px;
   text-decoration: none;
 }
