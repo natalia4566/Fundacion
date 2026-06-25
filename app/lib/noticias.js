@@ -95,7 +95,7 @@ export const noticias = [
   titulo: 'Celebración del Día del Padre',
   slug: 'celebracion-dia-del-padre-2026',
   fecha: '16 de junio de 2026',
-  imagen: '/Feliz día.png',
+  imagen: '/padres.jpeg',
   contenido: [
     { 
       tipo: 'texto', 
